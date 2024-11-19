@@ -1,6 +1,51 @@
+/* color palette
+/* pink and grey */
+/* d7d2cb,
+f1c6d2,
+e6b7c1,
+c4b6b1,
+a9a09e */ 
+
+/* pink and beige
+f5e0d1,
+f2b1c5,
+e8a6b0,
+d5988b,
+c49a7e */
+
+/* pink and green
+f2e0e0,
+b99095,
+54694a,
+dee0e0 */
+
 body{
-    background-color: aquamarine;
-    font-family: "Poppins", sans-serif;
-        font-weight: 600;
+    font-family: "inter", sans-serif;
         font-style: normal;
+}
+
+.header{
+    background-color: white;
+    text-align: left;
+    margin-left: 50px;
+}
+
+h1{
+    font-weight: bold;
+    margin: 50px 50px 0 0;
+    font-size: 60px;
+}
+
+h2{
+    font-weight: 200;;
+    font-size: 30px;
+    margin: 20px 20px 20px 0;
+}
+
+.btn{
+    padding: 15px;
+    background-color: black;
+    color: white;
+
+
 }
