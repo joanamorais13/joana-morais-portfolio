@@ -18,17 +18,15 @@ f2e0e0,
 b99095,
 54694a,
 dee0e0 */
-
+:root{
+    --font-color: black;
+    --font-family: "inter",
+        sans-serif;
+}
 body{
-    font-family: "inter", sans-serif;
-        font-style: normal;
+    font-family: var(--font-family)
 }
 
-.header{
-    background-color: white;
-    text-align: left;
-    margin-left: 50px;
-}
 
 h1{
     font-weight: bold;
@@ -41,11 +39,14 @@ h2{
     font-size: 30px;
     margin: 20px 20px 20px 0;
 }
+.header {
+    background-color: white;
+    text-align: left;
+    margin-left: 50px;}
 
 .btn{
     padding: 15px;
     background-color: black;
     color: white;
-
-
+    margin-top: 40px;
 }
