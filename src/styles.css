@@ -68,10 +68,7 @@ a {
     cursor: pointer;
     transition: all 200ms ease;
 }
-.btn:hover{
-    background-color: white;
-    border: 1px solid black;
-}
+
 
 .container{
     display: grid;
@@ -85,13 +82,22 @@ a {
     padding: 20px;
 }
 
+img:hover {
+    transform: scale(0.99);
+    opacity: 0.8;
+}
 a:hover{
    color: grey;
 transition: all 200ms ease;
 }
 
+.btn:hover {
+    background-color: white;
+    border: 1px solid black;
+}
 
-img:hover{
-    transform: scale(0.99);
-    opacity: 0.8;
+@media(max-width: 900px){
+    .main-page{
+        margin: 0;
+    }
 }
