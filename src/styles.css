@@ -101,3 +101,14 @@ transition: all 200ms ease;
         margin: 0;
     }
 }
+
+.col{
+    margin-top: 50px;
+    margin-bottom: 50px;
+  
+}
+
+.fit-image {
+    width: 100%;
+    object-fit:contain;
+}
