@@ -35,12 +35,23 @@ h4{font-family: var(--font-family);
 
 }
 
-h5{font-family: var(--font-family);
+h5 {font-family: var(--font-family);
     text-align: left;
     font-weight: bold;
     font-size: 25px;
 
+
 }
+h6 {
+    font-family: var(--font-family);
+    text-align: left;
+    font-weight: bold;
+    font-size: 25px;
+    margin: 0 10px 0 10px;
+
+}
+
+
 p{
     text-align: justify;
     font-weight: 200;
@@ -70,11 +81,13 @@ nav a {
 footer {
     background-color: rgb(247, 247, 249);
     height:140px;
-    margin: 50px auto;
-    max-width: 1500px;
+    margin: 0 auto;
+    max-width: auto;
     border: 1px solid rgb(228, 229, 229);
     border-radius: 5px;
 }
+
+
 
 
 .header {
@@ -143,33 +156,35 @@ footer {
     font-weight: bold;
 }
 
-.coding-projects {
-    display: flex;
-    flex-direction: column;
-    align-content: space-evenly;
-    margin-top: 50px;
-}
 
 .coding-projects-title {
     text-align: end;
+    margin-top: 20px;
 }
 
 .main-section-projects{
     margin-top: 50px;
+    
 }
 
-.contact-box, .social-links{
-    width: 500px;
-    height: 50px;
+
+.social-links{
     margin: 50px;
     display: flex;
     justify-content: space-around;
-    font-size: 35px;
-    margin-left: 100px
+    flex-direction: row;
+    font-size: 35px;    
 }
 
+.footer-contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;}
 
-
+.github-note{
+    margin: 30px 0 20px 0;
+}
 img:hover {
     transform: scale(0.99);
     opacity: 0.8;
@@ -187,16 +202,16 @@ transition: all 200ms ease;
 
 
 
-@media (max-width: 576px) {
+@media (min-width: 320px) and (max-width: 480px) {
    body{
         margin: 5px auto;
    }
    
     footer{
-        height: 150px;
-        margin: 50px auto;
-        max-width: auto;
-        border: 1px solid rgb(228, 229, 229);
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
    }
    
     .navbar-nav {
@@ -207,33 +222,31 @@ transition: all 200ms ease;
         max-width: 50px;
     }
 
-    h1{
-        font-size: 40px;
-    }    
-
-    h2{
-        font-size: 25px;
-    }
-    h3, h5 {
-        font-size: 20px;
+        h1 {
+            font-size: 30px;
         }
-    h4 {
-        font-size: 12px;
-        
-    }
-
     
+        h2 {
+            font-size: 25px;
+        }
+    
+        h3,
+        h5 {
+            font-size: 20px;
+        }
+    
+        h4 {
+            font-size: 12px;
+    
+        }
+    
+        h6{ font-size: 12px;}
     
     .btn{
         font-size: 15px;
     }
-    .contact-box {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        margin: 0;
-    }
 
+        
     .about-text{
         margin:30px 0 30px 0;
     }
@@ -241,36 +254,186 @@ transition: all 200ms ease;
     .main-section-projects{
         margin-top: 40px;
     }
-   
-    .footer-contact{
+
+    
+    .social-links{
         display: flex;
-        align-content: center;
-        margin-top: 20px;
+        align-items: center;
+        flex-direction: column;
+        margin: 10px;
+        justify-content: space-around;
+        font-size: 25px;
     }
   
+    .coding-journey{
+        display: flex;
+        flex-direction: column;
+    }
+    .about-button {
+      width: 100%;
+    }
+
+    .github-note{
+        font-size: 12px;
+    }
 }
 
-@media (max-width: 1024px) {
+@media (min-width: 481px) and (max-width: 768px) {
+    body {
+        margin: 5px auto;
+    }
+
+    footer {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .navbar-brand img {
+        max-width: 50px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    h3,
+    h5 {
+        font-size: 20px;
+    }
+
+    h4 {
+        font-size: 12px;
+
+    }
+
+    h6 {
+        font-size: 20px;
+    }
+
+    .btn {
+        font-size: 15px;
+    }
+
+
+    .about-text {
+        margin: 30px 0 30px 0;
+    }
+
+    .main-section-projects {
+        margin-top: 40px;
+    }
+
+
+    .social-links {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 10px;
+        justify-content: space-around;
+        font-size: 30px;
+    }
+
     .coding-journey {
-        width: 100%;
-        flex-direction: column;    
+        display: flex;
+        flex-direction: column;
+        align-content: space-evenly;       
     }
-
-    .coding-journey .col {
-        width: 100%;
-        margin-bottom: 10px;
-    }
-
-    .coding-journey img {
-        max-width: 100%;
-        height: auto;
-    }
-
+   
     .about-button {
         width: 100%;
     }
+    
+    .github-note {
+        font-size: 18px;
+    }
+}
 
-    .coding-projects-title {
+@media (min-width: 769px) and (max-width: 1024px) {
+    body {
+        margin: 5px auto;
+    }
+
+    footer {
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .navbar-nav {
         text-align: center;
     }
+
+    .navbar-brand img {
+        max-width: 50px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    h3,
+    h5 {
+        font-size: 20px;
+    }
+
+    h4 {
+        font-size: 12px;
+
+    }
+
+    h6 {
+        font-size: 20px;
+    }
+
+    .btn {
+        font-size: 15px;
+    }
+
+
+    .about-text {
+        margin: 30px 0 30px 0;
+    }
+
+    .main-section-projects {
+        margin-top: 40px;
+    }
+
+
+    .social-links {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 10px;
+        justify-content: space-around;
+        font-size: 30px;
+    }
+         .coding-journey {
+             display: flex;
+             flex-direction: column;
+             align-content: space-evenly;
+         }
+    
+         .about-button {
+             width: 100%;
+         }
+    
+         .github-note {
+             font-size: 14px;
+         }
+
 }
