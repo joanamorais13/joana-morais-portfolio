@@ -62,7 +62,6 @@ p{
 }
 
 img {
-
     max-height: 250px;
     width: auto;
     display: left-align;
@@ -189,14 +188,13 @@ footer {
 .img-color {
     filter: grayscale(100%);
     transition: filter 0.3s ease, transform 0.3s ease;
-    
     }
 
 .img-color:hover {
     transform: scale(0.99);
     filter: grayscale(0%);
-    
 }
+
 
 
 .in-touch {
