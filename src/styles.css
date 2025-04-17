@@ -22,13 +22,13 @@ h1{
 
 
 h2{
-    font-weight: 200;;
+    font-weight: 200;
     font-size: 30px;
     /* margin: 20px 20px 20px 0; */
 }
 
 h3{font-weight: bold;
-    font-size: 30px;
+    font-size: 25px;
     /* margin: 20px 20px 20px 0; */
 }
 
@@ -110,10 +110,14 @@ footer {
 
 
 .header {
-    text-align:left;
-    margin-top: 50px;
-    padding-bottom: 25px;
+    text-align:center;
     border-bottom: 1px solid black;
+    background-image:linear-gradient(rgba(255, 255, 255, 0.8), rgba(251, 250, 250, 0.8)),
+        url("../images/header.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 150px;
     
 }
 
@@ -122,7 +126,7 @@ footer {
     padding: 15px;
     background-color: black;
     color: white;
-    margin-top: 40px;
+    margin-top: 20px;
     box-shadow: rgba(37, 39, 89, 0.08) 0px 5px 5px 0;
     cursor: pointer;
     transition: all 200ms ease;
@@ -138,7 +142,7 @@ footer {
 
 .container-projects {
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 100px auto;
 }
 
 
@@ -184,14 +188,56 @@ footer {
 }
 
 
+.coding-projects{
+margin-top: 50px;
+
+}
+
+
+
 .coding-projects-title {
-    text-align: end;
-    margin-top: 20px;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    margin: 50px 0 30px;
+    color: var(--font-color);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+.coding-projects-title a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+}
+
+.coding-projects-title a:hover {
+    color: var(--font-color);
+    color: grey;
+    transition: all 200ms ease;
+}
+
+.coding-projects-title::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 3px;
+    background-color: var(--font-color);
+    margin: 15px auto 0;
+    border-radius: 5px;
 }
 
 .main-section-projects{
-    margin-top: 50px;
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+
 }
+
+
 
 .grid-3-columns{
     grid-template-columns: 1fr 1fr 1fr;
@@ -245,14 +291,14 @@ footer {
     opacity: 0.8;
 } */
 a:hover{
-   color: grey;
-transition: all 200ms ease;
+    color: grey;
+    transition: all 200ms ease;
 }
 
 .btn:hover {
     background-color: white;
     border: 1px solid black;
-    transition: all 200ms ease
+    transition: all 200ms ease;
 }
 
 
@@ -263,6 +309,10 @@ transition: all 200ms ease;
 
 .project-description{
     padding-left: 100px;
+}
+
+.email-contact{
+    font-weight: 600;
 }
 
 
@@ -299,12 +349,18 @@ transition: all 200ms ease;
             font-size: 20px;
         }
     
-        h4 {
+        h4, h6 {
             font-size: 12px;
     
         }
     
-        h6{ font-size: 12px;}
+        h7{
+            font-size: 14px;
+        }
+
+        p{
+            font-size: 12px;
+        }
     
     .btn{
         font-size: 15px;
@@ -319,6 +375,9 @@ transition: all 200ms ease;
         width: 100%;
     }
 
+    .main-page{
+        margin: 0;
+    }
 
     .main-section-projects{
         margin-top: 40px;
@@ -342,7 +401,21 @@ transition: all 200ms ease;
     .github-note{
         font-size: 12px;
     }
+
+    .project-description{
+        padding: 15px;
+    }
+
+    .project-row{
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+
+
+
 }
+
 
 @media (min-width: 481px) and (max-width: 768px) {
     body {
@@ -422,6 +495,8 @@ transition: all 200ms ease;
     .github-note {
         font-size: 18px;
     }
+
+
 
    
     
