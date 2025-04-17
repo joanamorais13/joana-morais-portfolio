@@ -27,35 +27,31 @@ h2{
     /* margin: 20px 20px 20px 0; */
 }
 
-h3{font-weight: bold;
+h3{
+    font-weight: bold;
     font-size: 25px;
     /* margin: 20px 20px 20px 0; */
 }
 
 
-h4{font-family: var(--font-family);
-    text-align: left;
-    font-weight: bold;
-
-}
-
-h5 {font-family: var(--font-family);
+h4{
+    font-family: var(--font-family);
     text-align: left;
     font-weight: bold;
     font-size: 25px;
 
-
 }
-h6 {
+
+h5 {
     font-family: var(--font-family);
     text-align: left;
     font-weight: bold;
     font-size: 20px;
-    margin: 0 10px 0 10px;
+    margin: 0 10px 0 10px;}
+    
 
-}
 
-h7{
+h6{
     font-family: var(--font-family);
     text-align: left;
     font-weight: 400;
@@ -71,13 +67,11 @@ p{
 }
 
 img {
-    max-height: 250px;
-    width: auto;
-    
-    margin: 0 auto;
-    border-radius: 10px;
+    max-width: 100%;
+    max-height: 100%;
     transition: all 200ms ease-in;
     object-fit: cover;
+    border-radius: 10px;
 }
 
 
@@ -255,15 +249,10 @@ margin-top: 50px;
     filter: grayscale(0%);
 }
 
-
-.img-about{
-    max-width:100%;
-    max-height: 100%;
-    border-radius: 10px;
-    transition: all 200ms ease-in;
-    object-fit: cover;
-    
+.container-about{
+    margin-bottom: 50px;
 }
+
 
 .in-touch {
     font-size: 40px;
@@ -286,10 +275,7 @@ margin-top: 50px;
 .github-note{
     margin: 30px 0 20px 0;
 }
-/* img:hover {
-    transform: scale(0.99);
-    opacity: 0.8;
-} */
+
 a:hover{
     color: grey;
     transition: all 200ms ease;
@@ -307,8 +293,16 @@ a:hover{
     margin-bottom: 100px;
 }
 
+.project-row .row {
+    display: flex;
+    align-items: stretch;
+}
+
 .project-description{
     padding-left: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .email-contact{
@@ -349,12 +343,12 @@ a:hover{
             font-size: 20px;
         }
     
-        h4, h6 {
+        h4, h5 {
             font-size: 12px;
     
         }
     
-        h7{
+        h6{
             font-size: 14px;
         }
 
