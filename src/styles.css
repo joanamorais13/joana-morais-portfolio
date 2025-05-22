@@ -111,7 +111,7 @@ footer {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    padding: 150px;
+    padding: 250px;
     
 }
 
@@ -315,52 +315,111 @@ a:hover{
         margin: 5px auto;
    }
    
-    footer{
-        
-        display: flex;
-        align-items: center;
-        justify-content: center;
+   .head-container{
+    margin: 25px;
    }
+
+    .header {
+        max-height: 250px;
+        padding: 50px;
+     }
    
-    .navbar-nav {
-        text-align: center;
+   .navbar {
+       padding-top: 4px;
+       padding-bottom: 4px;
+   }
+
+   .navbar-nav .nav-link {
+       font-size: 12px;
+       padding-top: 4px;
+       padding-bottom: 4px;
+       padding-left: 8px;
+       padding-right: 8px;
+   }
+
+   .logo {
+       height: 50px;
+       width: auto;
+   }
+
+   .navbar-toggler {
+       padding: 4px 6px;
+       font-size: 12px;
+   }
+
+   .container {
+       padding-left: 8px;
+       padding-right: 8px;
+   }
+/* 
+   .header h1 {
+       font-size: 35px;
+   }
+
+   .header h2 {
+       font-size: 20px;
+   }
+
+   .coding-projects-title {
+       font-size: 25px;
+   } */
+
+    h1 {
+        font-size: 30px;
     }
     
-    .navbar-brand img {
-        max-width: 50px;
+    h2 {
+        font-size: 25px;
+     }
+    
+    h3, h5 {
+        font-size: 20px;
+    }
+    
+    h4, h5 {
+        font-size: 12px;
+    
+    }
+    
+    h6{
+        font-size: 14px;
     }
 
-        h1 {
-            font-size: 30px;
-        }
+    p{
+        font-size: 12px;
+    }
     
-        h2 {
-            font-size: 25px;
-        }
-    
-        h3,
-        h5 {
-            font-size: 20px;
-        }
-    
-        h4, h5 {
-            font-size: 12px;
-    
-        }
-    
-        h6{
-            font-size: 14px;
-        }
-
-        p{
-            font-size: 12px;
-        }
     
     .btn{
-        font-size: 15px;
+        font-size: 10px;
+        margin-top: 10px;
+        padding: 10px;
     }
 
-        
+    
+
+    .coding-projects{
+        margin: 0;
+    }
+
+    .coding-projects h2{
+      font-size: 15px;
+    }
+
+
+    .coding-projects-title{
+        margin-top: 50px;
+        margin-bottom: 0;
+    }
+
+    .main-section-projects{
+        margin-top: 0px;
+    }
+
+    .container-projects{
+        margin-top: 15px;
+    }
+
     .about-text{
         margin:30px;
     }
@@ -406,6 +465,12 @@ a:hover{
     }
 
 
+    footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
 
 
 }
@@ -431,6 +496,23 @@ a:hover{
         max-width: 50px;
     }
 
+    .header {
+        max-height: 550px;
+        padding: 200px 50px 200px;
+     }
+
+     
+    .header h1 {
+        font-size: 35px;
+    }
+    .header h2 {
+        font-size: 20px;
+    }
+
+    .coding-projects-title{
+        font-size: 25px;
+    }
+
     h1 {
         font-size: 40px;
     }
@@ -455,6 +537,8 @@ a:hover{
 
     .btn {
         font-size: 15px;
+        margin-top: 15px;
+        padding: 12px;
     }
 
 
@@ -476,6 +560,9 @@ a:hover{
         font-size: 30px;
     }
 
+    .social-links h5 {
+        font-size: 15px;
+    }
     .coding-journey {
         display: flex;
         flex-direction: column;
@@ -501,6 +588,7 @@ a:hover{
         margin: 5px auto;
     }
 
+  
     footer {
 
         display: flex;
@@ -560,18 +648,25 @@ a:hover{
         justify-content: space-around;
         font-size: 30px;
     }
-         .coding-journey {
-             display: flex;
-             flex-direction: column;
-             align-content: space-evenly;
-         }
+
+    .social-links h5{
+        font-size: 18px;
+    }
     
-         .about-button {
-             width: 100%;
-         }
+    .coding-journey {
+        display: flex;
+        flex-direction: column;
+        align-content: space-evenly;
+     }
     
-         .github-note {
-             font-size: 14px;
-         }
+    .about-button {
+        width: 100%;
+    }
+    
+    .github-note {
+        font-size: 10px;
+    }
+
+         
 
 }
