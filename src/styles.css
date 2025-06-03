@@ -231,7 +231,9 @@ margin-top: 50px;
 
 }
 
-
+.second-line-projects{
+    margin-top: 60px;
+}
 
 .grid-3-columns{
     grid-template-columns: 1fr 1fr 1fr;
@@ -418,6 +420,14 @@ a:hover{
 
     .container-projects{
         margin-top: 15px;
+    }
+
+    .second-line-projects{
+        margin-top: 0;
+    }
+
+    .app {
+        margin: 20px;
     }
 
     .about-text{
