@@ -182,14 +182,28 @@ footer {
 }
 
 
-.coding-projects{
+.coding-projects, .coding-skills{
 margin-top: 50px;
 
 }
 
+.coding-skills-list{
+    margin-top: 90px;
+    
+}
+
+.coding-logo{
+    font-size: 60px;
+}
+
+.coding-logo h4{
+    margin: 30px 0 30px 0;
+}
 
 
-.coding-projects-title {
+
+
+.coding-projects-title, .coding-skills-title {
     font-size: 30px;
     font-weight: 700;
     text-align: center;
@@ -200,22 +214,22 @@ margin-top: 50px;
     position: relative;
 }
 
-.coding-projects-title a {
+.coding-projects-title, .coding-skills-title a {
     text-decoration: none;
     color: inherit;
     transition: color 0.3s ease;
 }
 
-.coding-projects-title a:hover {
+.coding-projects-title, .coding-skills-title a:hover {
     color: var(--font-color);
     color: grey;
     transition: all 200ms ease;
 }
 
-.coding-projects-title::after {
+.coding-projects-title::after, .coding-skills-title::after {
     content: "";
     display: block;
-    width: 100px;
+    width: 1200px;
     height: 3px;
     background-color: var(--font-color);
     margin: 15px auto 0;
