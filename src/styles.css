@@ -136,7 +136,7 @@ footer {
 
 .container-projects {
     max-width: 1200px;
-    margin: 100px auto;
+    margin: 70px auto;
 }
 
 
@@ -183,7 +183,7 @@ footer {
 
 
 .coding-projects, .coding-skills{
-margin-top: 50px;
+margin-top: 30px;
 
 }
 
@@ -213,7 +213,8 @@ margin-top: 50px;
     font-size: 30px;
     font-weight: 700;
     text-align: center;
-    margin: 50px 0 30px;
+    margin: 30px 0 30px;
+    
     color: var(--font-color);
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -235,7 +236,7 @@ margin-top: 50px;
 .coding-projects-title::after, .coding-skills-title::after {
     content: "";
     display: block;
-    width: 1200px;
+    width: 1150px;
     height: 3px;
     background-color: var(--font-color);
     margin: 15px auto 0;
