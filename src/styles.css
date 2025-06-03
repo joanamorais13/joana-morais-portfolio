@@ -450,6 +450,9 @@ a:hover{
 
     .coding-logo {
         width: 25%;
+        font-size: 25px;
+        margin: 10px 0 10px 0;
+        
     }
     .mini-coding-logo{
         font-size: 25px;
