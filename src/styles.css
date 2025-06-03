@@ -450,7 +450,7 @@ a:hover{
 
     .coding-logo {
         width: 25%;
-        font-size: 25px;
+        font-size: 30px;
         margin: 10px 0 10px 0;
         
     }
@@ -463,6 +463,8 @@ a:hover{
 
     .container-projects{
         margin-top: 15px;
+        padding: 0 15px;
+        
     }
 
     .second-line-projects{
@@ -470,7 +472,8 @@ a:hover{
     }
 
     .app {
-        margin: 20px;
+        margin: 5px;
+        padding: 5px
     }
 
     .about-text{
@@ -487,6 +490,8 @@ a:hover{
 
     .main-section-projects{
         margin-top: 40px;
+        padding-left: 15px;
+        padding-right: 15px;   
     }
 
     
