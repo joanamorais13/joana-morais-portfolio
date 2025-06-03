@@ -236,11 +236,14 @@ margin-top: 30px;
 .coding-projects-title::after, .coding-skills-title::after {
     content: "";
     display: block;
-    width: 1150px;
+    max-width: 1150px;
+    width: 100%;
     height: 3px;
     background-color: var(--font-color);
     margin: 15px auto 0;
     border-radius: 5px;
+    
+    }
 }
 
 .main-section-projects{
@@ -336,6 +339,7 @@ a:hover{
 @media (min-width: 320px) and (max-width: 480px) {
    body{
         margin: 5px auto;
+        overflow-x: hidden;
    }
    
    .head-container{
@@ -437,13 +441,15 @@ a:hover{
 
     .coding-projects-title::after,
     .coding-skills-title::after {
-            width: 350px;}
+        max-width: 350px;
+        width: 100%;}
 
 
 
     .coding-skills-list{
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
         margin-top: 30px;
         
     }
@@ -452,6 +458,8 @@ a:hover{
         width: 25%;
         font-size: 30px;
         margin: 10px 0 10px 0;
+        text-align: center;
+        box-sizing: border-box;
         
     }
     .mini-coding-logo{
@@ -472,7 +480,7 @@ a:hover{
     }
 
     .app {
-        margin: 5px;
+        margin: 5px auto;
         padding: 5px
     }
 
