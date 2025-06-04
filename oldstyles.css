@@ -1,0 +1,835 @@
+:root {
+    --font-color: black;
+    --font-family: "inter",
+        sans-serif;
+    --background-color: white;
+}
+
+body {
+    font-family: var(--font-family);
+    color: var(--font-color);
+    margin: 0 auto;
+    max-width: 1200px;
+
+}
+
+
+h1 {
+    font-weight: bold;
+
+    font-size: 60px;
+}
+
+
+h2 {
+    font-weight: 200;
+    font-size: 30px;
+    /* margin: 20px 20px 20px 0; */
+}
+
+h3 {
+    font-weight: bold;
+    font-size: 25px;
+    /* margin: 20px 20px 20px 0; */
+}
+
+
+h4 {
+    font-family: var(--font-family);
+    text-align: left;
+    font-weight: bold;
+    font-size: 25px;
+
+}
+
+h5 {
+    font-family: var(--font-family);
+    text-align: left;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0 10px 0 10px;
+}
+
+
+
+h6 {
+    font-family: var(--font-family);
+    text-align: left;
+    font-weight: 400;
+    font-size: 18px;
+    text-decoration: underline;
+
+}
+
+
+p {
+    text-align: justify;
+    font-weight: 200;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    transition: all 200ms ease-in;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+
+
+a {
+    text-decoration: none;
+    color: var(--font-color);
+    cursor: pointer;
+    transition: all 200ms ease;
+}
+
+
+nav a {
+    margin: 15px;
+    padding: 0;
+}
+
+footer {
+    background-color: rgb(247, 247, 249);
+    height: 140px;
+    margin: 0 auto;
+    max-width: auto;
+    border: 1px solid rgb(228, 229, 229);
+    border-radius: 5px;
+
+}
+
+
+
+
+.header {
+    text-align: center;
+    border-bottom: 1px solid black;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(251, 250, 250, 0.8)),
+        url("../images/header.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 250px;
+    min-height: 700px;
+
+}
+
+
+.btn {
+    padding: 15px;
+    background-color: black;
+    color: white;
+    margin-top: 20px;
+    box-shadow: rgba(37, 39, 89, 0.08) 0px 5px 5px 0;
+    cursor: pointer;
+    transition: all 200ms ease;
+}
+
+
+.container {
+    display: grid;
+    grid-gap: 20px;
+    margin: 0 auto;
+
+}
+
+.container-projects {
+    max-width: 1200px;
+    margin: 70px auto;
+}
+
+
+
+.main-page {
+    margin: 50px auto;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.col {
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+}
+
+
+
+.logo {
+    max-width: 100px;
+    margin: 0;
+    padding: 0;
+
+}
+
+.head-container {
+    margin: 50px auto;
+    width: 100%;
+    padding: 20px;
+}
+
+.navbar {
+    border: 1px solid black;
+    background-color: white;
+}
+
+.active {
+    font-weight: bold;
+}
+
+
+.coding-projects,
+.coding-skills {
+    margin-top: 90px;
+
+}
+
+.projects-coding-logo {
+    font-size: 35px;
+    margin: 0 15px 0 15px;
+}
+
+.extra-coding-logo {
+    font-size: 30px;
+    margin: 0 60px 0 60px;
+}
+
+.extra-coding-logo h4 {
+    font-size: 18px;
+}
+
+.coding-skills-list {
+    margin-top: 40px;
+
+}
+
+.coding-logo {
+    font-size: 60px;
+}
+
+.coding-logo h4 {
+    margin: 30px 0 30px 0;
+    text-align: center;
+}
+
+.mini-coding-logo {
+    font-size: 30px;
+    margin: 0 4px 0 4px;
+
+}
+
+
+
+.coding-projects-title,
+.coding-skills-title {
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    margin: 30px 0 30px;
+
+    color: var(--font-color);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+.additional-skills-title {
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    margin: 30px 0 30px;
+    color: var(--font-color);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+
+}
+
+.coding-projects-title,
+.coding-skills-title,
+.additional-skills-title a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+}
+
+.coding-projects-title,
+.coding-skills-title,
+.additional-skills-title a:hover {
+    color: var(--font-color);
+    color: grey;
+    transition: all 200ms ease;
+}
+
+.coding-projects-title::after,
+.coding-skills-title::after {
+    content: "";
+    display: block;
+    max-width: 1150px;
+    width: 100%;
+    height: 3px;
+    background-color: var(--font-color);
+    margin: 15px auto 0;
+    border-radius: 5px;
+
+}
+
+.additional-skills-title::after {
+    content: "";
+    display: block;
+    max-width: 550px;
+    width: 100%;
+    height: 3px;
+    background-color: var(--font-color);
+    margin: 15px auto 0;
+    border-radius: 5px;
+    font-size: 5px;
+
+}
+
+
+
+
+.main-section-projects {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+
+}
+
+.second-line-projects {
+    margin-top: 60px;
+}
+
+.grid-3-columns {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+.img-color {
+    filter: grayscale(100%);
+    transition: filter 0.3s ease, transform 0.3s ease;
+    border: 1px solid rgb(210, 209, 209);
+}
+
+.img-color:hover {
+    transform: scale(0.99);
+    filter: grayscale(0%);
+}
+
+.container-about {
+    margin-bottom: 50px;
+}
+
+
+.in-touch {
+    font-size: 40px;
+}
+
+.social-links {
+    margin: 50px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    font-size: 35px;
+}
+
+.footer-contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.github-note {
+    margin: 30px 0 20px 0;
+}
+
+a:hover {
+    color: grey;
+    transition: all 200ms ease;
+}
+
+.btn:hover {
+    background-color: white;
+    border: 1px solid black;
+    transition: all 200ms ease;
+}
+
+
+.project-row {
+    margin-top: 60px;
+    margin-bottom: 100px;
+}
+
+.project-row .row {
+    display: flex;
+    align-items: stretch;
+}
+
+.project-description {
+    padding-left: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.email-contact {
+    font-weight: 600;
+}
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+    body {
+        margin: 5px auto;
+        overflow-x: hidden;
+    }
+
+    .head-container {
+        margin: 25px;
+    }
+
+    .header {
+        min-height: 300px;
+        padding: 50px;
+    }
+
+    .navbar {
+        padding-top: 4px;
+        padding-bottom: 4px;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 12px;
+        padding-top: 4px;
+        padding-bottom: 4px;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    .logo {
+        height: 50px;
+        width: auto;
+    }
+
+    .navbar-toggler {
+        padding: 4px 6px;
+        font-size: 12px;
+    }
+
+    .container {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    /* 
+   .header h1 {
+       font-size: 35px;
+   }
+
+   .header h2 {
+       font-size: 20px;
+   }
+
+   .coding-projects-title {
+       font-size: 25px;
+   } */
+
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    h3,
+    h5 {
+        font-size: 20px;
+    }
+
+    h4,
+    h5 {
+        font-size: 12px;
+
+    }
+
+    h6 {
+        font-size: 14px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+
+    .btn {
+        font-size: 10px;
+        margin-top: 10px;
+        padding: 10px;
+    }
+
+
+
+    .coding-projects,
+    .coding-skills {
+        margin: 0;
+    }
+
+    .coding-projects h2,
+    .coding-skills h2 {
+        font-size: 15px;
+    }
+
+
+    .coding-projects-title,
+    .coding-skills-title {
+        margin-top: 50px;
+        margin-bottom: 0;
+    }
+
+    .coding-projects-title::after,
+    .coding-skills-title::after {
+        max-width: 350px;
+        width: 100%;
+    }
+
+
+    .additional-skills-title::after {
+        max-width: 250px;
+        width: 50%;
+    }
+
+
+    .coding-skills-list,
+    .additional-skills-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 30px;
+
+    }
+
+    .coding-logo {
+        width: 33%;
+        font-size: 30px;
+        margin: 10px 0 10px 0;
+        text-align: center;
+        box-sizing: border-box;
+
+    }
+
+    .extra-coding-logo {
+        width: 33%;
+        font-size: 20px;
+        margin: 10px 0 10px 0;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    .extra-coding-logo h4 {
+        font-size: 14px;
+        margin-top: 20px;
+    }
+
+
+    .coding-list h3 {
+        font-size: 15px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .projects-coding-logo {
+        font-size: 20px;
+    }
+
+    .mini-coding-logo {
+        font-size: 25px;
+    }
+
+    .main-section-projects {
+        margin-top: 0px;
+    }
+
+    .container-projects {
+        margin-top: 15px;
+        padding: 0 15px;
+
+    }
+
+    .second-line-projects {
+        margin-top: 0;
+    }
+
+    .app {
+        margin: 15px auto;
+        padding: 5px
+    }
+
+    .about-text {
+        margin: 30px;
+    }
+
+    .about-button {
+        width: 100%;
+    }
+
+    .main-page {
+        margin: 0;
+    }
+
+    .main-section-projects {
+        margin-top: 40px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+
+    .social-links {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 10px;
+        justify-content: space-around;
+        font-size: 25px;
+    }
+
+    .coding-journey {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .github-note {
+        font-size: 12px;
+    }
+
+    .project-description {
+        padding: 15px;
+    }
+
+    .project-row {
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+
+    footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+}
+
+
+@media (min-width: 481px) and (max-width: 768px) {
+    body {
+        margin: 5px auto;
+    }
+
+    footer {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .navbar-brand img {
+        max-width: 50px;
+    }
+
+    .header {
+        max-height: 550px;
+        padding: 200px 50px 200px;
+    }
+
+
+    .header h1 {
+        font-size: 35px;
+    }
+
+    .header h2 {
+        font-size: 20px;
+    }
+
+    .coding-projects-title,
+    .coding-skills-title {
+        font-size: 25px;
+    }
+
+    .additional-skills-title {
+        font-size: 10px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    h3,
+    h5 {
+        font-size: 20px;
+    }
+
+    h4 {
+        font-size: 12px;
+
+    }
+
+    h6 {
+        font-size: 20px;
+    }
+
+    .btn {
+        font-size: 15px;
+        margin-top: 15px;
+        padding: 12px;
+    }
+
+
+    .about-text {
+        margin: 30px 0 30px 0;
+    }
+
+    .main-section-projects {
+        margin-top: 40px;
+    }
+
+
+    .social-links {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 10px;
+        justify-content: space-around;
+        font-size: 30px;
+    }
+
+    .social-links h5 {
+        font-size: 15px;
+    }
+
+    .coding-journey {
+        display: flex;
+        flex-direction: column;
+        align-content: space-evenly;
+    }
+
+    .about-button {
+        width: 100%;
+    }
+
+    .github-note {
+        font-size: 18px;
+    }
+
+
+
+
+
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    body {
+        margin: 5px auto;
+    }
+
+
+    footer {
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .navbar-brand img {
+        max-width: 50px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    h3,
+    h5 {
+        font-size: 20px;
+    }
+
+    h4 {
+        font-size: 12px;
+
+    }
+
+    h6 {
+        font-size: 20px;
+    }
+
+    .btn {
+        font-size: 15px;
+    }
+
+
+    .about-text {
+        margin: 30px 0 30px 0;
+    }
+
+    .main-section-projects {
+        margin-top: 40px;
+    }
+
+
+    .social-links {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 10px;
+        justify-content: space-around;
+        font-size: 30px;
+    }
+
+    .social-links h5 {
+        font-size: 18px;
+    }
+
+    .coding-journey {
+        display: flex;
+        flex-direction: column;
+        align-content: space-evenly;
+    }
+
+    .about-button {
+        width: 100%;
+    }
+
+    .github-note {
+        font-size: 10px;
+    }
+
+
+
+}
