@@ -700,27 +700,31 @@ p {
     margin: 30px 0 50px;
 }
 
+
 .coding-logo,
 .extra-coding-logo {
     width: 33%;
-    font-size: 30px;
-    margin: 0px 0;
     box-sizing: border-box;
 }
 
-.mini-coding-logo {
-    font-size: 18px;
-    margin: 0 4px;
+.coding-logo {
+    font-size: 30px;
+    margin: 0px 0;
 }
 
 .extra-coding-logo {
-    font-size: 30px;
+    font-size: 15px;
     margin: 0 20px;
 }
 
 .extra-coding-logo h4 {
     font-size: 12px;
     margin-top: 20px;
+}
+
+.mini-coding-logo {
+    font-size: 18px;
+    margin: 0 4px;
 }
 
 .coding-skills {
