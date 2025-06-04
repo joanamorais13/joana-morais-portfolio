@@ -112,6 +112,7 @@ footer {
     background-size: cover;
     background-position: center;
     padding: 250px;
+    min-height: 700px;
     
 }
 
@@ -187,6 +188,11 @@ margin-top: 30px;
 
 }
 
+.projects-coding-logo{
+    font-size: 35px;
+    margin: 0 15px 0 15px;
+}
+
 .coding-skills-list{
     margin-top: 90px;
     
@@ -244,7 +250,7 @@ margin-top: 30px;
     border-radius: 5px;
     
     }
-}
+
 
 .main-section-projects{
   width: 100%;
@@ -480,7 +486,7 @@ a:hover{
     }
 
     .app {
-        margin: 5px auto;
+        margin: 15px auto;
         padding: 5px
     }
 
