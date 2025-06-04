@@ -406,7 +406,8 @@ footer {
         
     .navbar-toggler {
         padding: 4px 6px;
-        font-size: 12px;
+        font-size: 14px;
+        margin: 20px;   
     }
 
     .container {
