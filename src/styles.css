@@ -120,13 +120,15 @@ nav a {
 
 footer {
     background-color: rgb(247, 247, 249);
-    height: 140px;
+    min-height: 80px;
+    padding: 20px 0;
     border: 1px solid rgb(228, 229, 229);
     border-radius: 5px;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 80px;
+    width: 100%;
 }
 
 /* Components */
@@ -786,9 +788,13 @@ p {
 }
 
 footer {
-    display: flex;
+    /* display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
+
+    flex-direction: column;
+    padding: 30px 0;
+    
     
 }
 }
