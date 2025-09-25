@@ -44,7 +44,7 @@ h5 {
 }
 
 h5 {
-    font-size: 20px;
+    font-size: 15px;
     margin: 0 10px;
 }
 
@@ -118,17 +118,64 @@ nav a {
     margin: 15px;
 }
 
+
+
 footer {
-    background-color: rgb(247, 247, 249);
-    min-height: 80px;
-    padding: 20px 0;
-    border: 1px solid rgb(228, 229, 229);
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 80px;
-    width: 100%;
+  background: #f7f7f9;
+  border-top: 1px solid #e4e5e5;
+  padding: 32px 0 16px 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+
+    position: relative;
+    left: 50%;
+    right: 50%;
+    width: 100vw;
+    max-width: 100vw;
+    margin-left: -50vw;
+    margin-right: -50vw;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+  width: 50%;
+  justify-content: space-around;
+}
+
+.footer-links a {
+  color: #252525;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  opacity: 0.85;
+  transition: color 0.2s, opacity 0.2s;
+}
+
+.footer-links a:hover {
+    color: grey;
+    transform: scale(0.9);
+    transition: transform 0.2s;
+    }
+
+
+.footer-links i {
+  font-size: 18px;
+}
+
+.footer-copy {
+  font-size: 13px;
+  color: #888;
+  margin-top: 20px;
+  text-align: center;
 }
 
 /* Components */
@@ -337,7 +384,7 @@ footer {
     display: flex;
     justify-content: space-around;
     flex-direction: row;
-    font-size: 35px;
+    font-size: 20px;
     margin: 50px;
 }
 
@@ -358,6 +405,8 @@ footer {
         margin: 5px auto;
         overflow-x: hidden;
     }
+
+
 
     .navbar-collapse {
         opacity: 0;
@@ -388,20 +437,23 @@ footer {
     }
   
     .navbar {
-        padding-top: 4px;
-        padding-bottom: 4px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        min-height: 40px;
+        display: flex;
+        align-items: center;
     }
     
     .navbar-nav .nav-link {
         font-size: 12px;
-        padding-top: 4px;
-        padding-bottom: 4px;
-        padding-left: 8px;
-        padding-right: 8px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        padding-left: 4px;
+        padding-right: 4px;
     }
 
     .logo {
-        height: 50px;
+        height: 70px;
         width: auto;
     }
         
@@ -564,8 +616,12 @@ footer {
         margin: 10px;
     }
 
-    footer {
+    
+
+    .footer-links {
         flex-direction: column;
+        gap: 10px;
+        max-width: none;
     }
 }
 
@@ -783,7 +839,7 @@ p {
 .social-links {
     flex-direction: column;
     justify-content: evenly;
-    font-size: 30px;
+    font-size: 15px;
     margin: 10px;
 }
 
