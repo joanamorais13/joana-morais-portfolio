@@ -851,10 +851,15 @@ footer {
     .in-touch{
         font-size: 30px;
     }
-    .social-links {
+    .footer-social .social-links {
+        display: flex;
         flex-direction: column;
-        font-size: 25px;
-        margin: 10px;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 300px;
     }
 
     
@@ -879,7 +884,10 @@ footer {
 
     .social-links {
         justify-content: center;
-        flex-wrap: wrap;
+        width: 100%;
+        display: flex;
+        
+        
     }
 
     .footer-bottom {
@@ -893,6 +901,8 @@ footer {
         flex-wrap: wrap;
         gap: 16px;
     }
+
+  
 }
 
 @media (min-width: 481px) and (max-width: 768px),
