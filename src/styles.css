@@ -541,6 +541,27 @@ footer {
     margin-bottom: 20px;
 }
 
+.contact-card .btn {
+    min-width: 160px;
+    padding: 10px 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #343a40;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background 0.3s ease;
+}
+
+.contact-card .btn:hover {
+    background: #495057;
+    color: white;
+    text-decoration: none;
+}
+
 .contact-section {
     margin: 50px 0;
 }
@@ -629,6 +650,10 @@ footer {
     margin: 5px;
     padding: 12px 25px;
     font-weight: 500;
+    min-width: 180px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .btn-primary {
@@ -851,6 +876,23 @@ footer {
     .in-touch{
         font-size: 30px;
     }
+
+    .cta-buttons {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        gap: 15px !important;
+        text-align: center !important;
+    }
+
+    .cta-buttons .btn {
+        width: 100% !important;
+        max-width: 280px !important;
+        margin: 0 !important;
+        display: block !important;
+    }
+
     .footer-social .social-links {
         display: flex;
         flex-direction: column;
